@@ -1,0 +1,35 @@
+{
+	"name": "adventofcode",
+	"version": "1.0.0",
+	"description": "These are my solutions in TypeScript/JavaScript of the Advent of Code in different years. Have a wonderful christmas! 🎄🎄🎄",
+	"homepage": "https://github.com/xHeitkamp/AdventOfCode",
+	"main": "index.js",
+	"scripts": {
+		"start": "ts-node index.ts",
+		"build": "tsc",
+		"day": "ts-node util/dayRunner.ts",
+		"init": "ts-node util/createDay.ts"
+	},
+	"config": {
+		"year": 2024
+	},
+	"keywords": [
+		"advent-of-code",
+		"advent-of-code-2023",
+		"advent-of-code-2024",
+		"aoc",
+		"aoc-2023",
+		"aoc-2024"
+	],
+	"author": "xHeitkamp(Robin Behlke)",
+	"license": "MIT",
+	"devDependencies": {
+		"@types/node": "^22.10.1",
+		"ts-node": "^10.9.2",
+		"typescript": "^5.7.2"
+	},
+	"dependencies": {
+		"axios": "^1.7.8",
+		"dotenv": "^16.4.5"
+	}
+}
