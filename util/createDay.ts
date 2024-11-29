@@ -49,12 +49,19 @@ getAoCInput(dayArg);
 function writeDayFile(day: number): void {
 	const templateDayFile = join('.', 'assets', 'dayTemplate.ts');
 	const templateIndexFile = join('.', 'assets', 'indexTemplate.ts');
+	const templateReadmeFile = join('.', 'assets', 'READMETemplate.md');
 
 	//Create directory
 	const dayPath = join(directoryPath, `day${day}.ts`);
 	if (!existsSync(directoryPath)) {
 		mkdirSync(directoryPath, { recursive: true });
 		copyFileSync(templateIndexFile, join(directoryPath, 'index.ts'));
+		//Readme
+		const template = readFileSync(templateReadmeFile, 'utf8');
+		const newReadme = template.replace(/&YEAR&/g, `${year}`);
+		if (!existsSync(dayPath)) {
+			writeFileSync(join(directoryPath, 'README.md'), newReadme);
+		}
 	}
 
 	//Create day file
