@@ -11,7 +11,7 @@
 		"init": "ts-node util/createDay.ts"
 	},
 	"config": {
-		"year": 2024
+		"year": 2023
 	},
 	"keywords": [
 		"advent-of-code",
