@@ -20,7 +20,6 @@ In the [package.json](package.json) you can specify the year that you want to ru
 	},
 	...
 }
-
 ```
 
 To get my solutions, just run following commands:
