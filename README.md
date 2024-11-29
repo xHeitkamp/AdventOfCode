@@ -40,6 +40,17 @@ npm run day 2 1         #Runs Day2 Puzzle1
 npm run day 2 1 true    #Runs Day2 Puzzle1 and logs the time in ms
 ```
 
+To initialize a new day, you can do that if just one line.
+When you are in the advent you do not need to specify anything. But if you aren't you need to input your wished day.
+
+```bash
+npm run init <?day>
+
+#Examples
+npm run init       #Only in december 1-25
+npm run init 14    #Creates the day 14 for you
+```
+
 ## Years of Advent of Code
 
 Each year of me participating in AoC you can find here
