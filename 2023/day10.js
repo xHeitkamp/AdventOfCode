@@ -116,8 +116,6 @@ function puzzle2() {
 				} else {
 					break;
 				}
-
-				console.log(rowIndex, columnIndex, beginnIndex);
 			}
 		}
 	}
