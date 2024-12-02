@@ -5,7 +5,7 @@
 |                Day                | Puzzle 1 (time) | Puzzle 2 (time) |
 | :-------------------------------: | :-------------: | :-------------: |
 | [1 - Historian Hysteria](day1.ts) |  ⭐️ (~0.07ms)  |  ⭐️ (~0.19ms)  |
-|        [2 - ???](day2.ts)         |                 |                 |
+| [2 - Red-Nosed Reports](day2.ts)  |  ⭐️ (~0.81ms)  |  ⭐️ (~2.91ms)  |
 |        [3 - ???](day3.ts)         |                 |                 |
 |        [4 - ???](day4.ts)         |                 |                 |
 |        [5 - ???](day5.ts)         |                 |                 |
