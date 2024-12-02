@@ -25,7 +25,7 @@ function puzzle2(): Number {
 	for (const report of input) {
 		const levels = report.split(' ').map(Number);
 
-        let tolerate = false;
+		let tolerate = false;
 		for (let i = 0; i < levels.length; i++) {
 			const removed = [...levels.slice(0, i), ...levels.slice(i + 1)];
 
