@@ -1,4 +1,4 @@
-# Advent of Code &YEAR&
+# 🎄 Advent of Code &YEAR& 🎄
 
 ## Days
 
