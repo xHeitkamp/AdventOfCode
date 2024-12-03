@@ -1,7 +1,9 @@
+// Link to AoC: https://adventofcode.com/&YEAR&/day/&DAY&
+
 // Modules
 import * as helpers from '../helpers';
 
-const input = helpers.fileHandler.getFileWithSplit('DayX.txt', '\n');
+const input = helpers.fileHandler.getFileWithSplit('Day&DAY&.txt', '\n');
 
 function puzzle1(): Number {
     //Default variables

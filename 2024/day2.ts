@@ -1,3 +1,5 @@
+// Link to AoC: https://adventofcode.com/2024/day/2
+
 // Modules
 import * as helpers from '../helpers';
 

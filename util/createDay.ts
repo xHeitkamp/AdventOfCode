@@ -58,7 +58,9 @@ function writeDayFile(day: number): void {
 		copyFileSync(templateIndexFile, join(directoryPath, 'index.ts'));
 		//Readme
 		const template = readFileSync(templateReadmeFile, 'utf8');
-		const newReadme = template.replace(/&YEAR&/g, `${year}`);
+		let newReadme = template
+		newReadme = newReadme.replace(/&YEAR&/g, `${year}`);
+		newReadme = newReadme.replace(/&DAY&/g, `${day}`);
 		if (!existsSync(dayPath)) {
 			writeFileSync(join(directoryPath, 'README.md'), newReadme);
 		}
@@ -66,7 +68,9 @@ function writeDayFile(day: number): void {
 
 	//Create day file
 	const template = readFileSync(templateDayFile, 'utf8');
-	const newDayFile = template.replace(/DayX/g, `Day${day}`);
+	let newDayFile = template;
+	newDayFile = newDayFile.replace(/&YEAR&/g, `${year}`);
+	newDayFile = newDayFile.replace(/&DAY&/g, `${day}`);
 	if (!existsSync(dayPath)) {
 		writeFileSync(dayPath, newDayFile);
 	}

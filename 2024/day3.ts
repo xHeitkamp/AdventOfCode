@@ -27,18 +27,18 @@ function puzzle2(): Number {
 	let output = 0;
 
 	//Puzzle solving
-	const findValidMul = /(do\(\)|don't\(\)|mul\((\d{1,3}),(\d+)\))/g;
+	const findValidMul = /(do\(\)|don't\(\)|mul\((\d{1,3}),(\d{1,3})\))/g;
 	const finds = corruptedMemory.matchAll(findValidMul);
 	let valid = true;
 	for (const find of finds) {
 		const [mul, mul2, x, y] = find;
 		if (mul === 'do()') {
 			valid = true;
-            continue;
+			continue;
 		}
 		if (mul === "don't()") {
 			valid = false;
-            continue;
+			continue;
 		}
 		if (valid) output += Number(x) * Number(y);
 	}
