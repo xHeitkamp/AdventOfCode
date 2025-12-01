@@ -8,7 +8,7 @@
 | [2 - Red-Nosed Reports](day2.ts)  |  ⭐️ (~0.81ms)  |  ⭐️ (~2.91ms)  |
 |    [3 - Mull It Over](day3.ts)    |  ⭐️ (~0.31ms)  |  ⭐️ (~0.31ms)  |
 |    [4 - Ceres Search](day4.ts)    |  ⭐️ (~2.56ms)  |  ⭐️ (~1.03ms)  |
-|        [5 - ???](day5.ts)         |                 |                 |
+|    [5 - Print Queue](day5.ts)     |                 |                 |
 |        [6 - ???](day6.ts)         |                 |                 |
 |        [7 - ???](day7.ts)         |                 |                 |
 |        [8 - ???](day8.ts)         |                 |                 |
