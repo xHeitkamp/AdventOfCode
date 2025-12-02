@@ -55,6 +55,7 @@ npm run init 14    #Creates the day 14 for you
 
 Each year of me participating in AoC you can find here
 
+-   [AoC 2025](2025/README.md)
 -   [AoC 2024](2024/README.md)
 -   [AoC 2023](2023/README.md)
 
