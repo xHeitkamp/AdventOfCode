@@ -1,14 +1,11 @@
 // Link to AoC: https://adventofcode.com/2025/day/4
 
-// Modules
-import * as helpers from '../helpers';
-
-const input = helpers.fileHandler.getFileWithSplit('Day4.txt', '\n');
-const grid = input.map((line) => line.split(''));
-
-function puzzle1(): Number {
+function puzzle1(data: String): Number {
 	//Default variables
 	let output = 0;
+
+	//Input
+	const grid = data.split('\n').map((line) => line.split(''));
 
 	//Puzzle solving
 	for (let i = 0; i < grid.length; i++) {
@@ -34,14 +31,17 @@ function puzzle1(): Number {
 	return output;
 }
 
-function puzzle2(): Number {
+function puzzle2(data: String): Number {
 	//Default variables
 	let output = 0;
+
+	//Input
+	const grid = data.split('\n').map((line) => line.split(''));
 
 	//Puzzle solving
 	let loopOutput = -1;
 	while (loopOutput !== 0) {
-        loopOutput = 0;
+		loopOutput = 0;
 		for (let i = 0; i < grid.length; i++) {
 			const line = grid[i];
 			for (let j = 0; j < line.length; j++) {
@@ -63,7 +63,7 @@ function puzzle2(): Number {
 				}
 			}
 		}
-        output += loopOutput;
+		output += loopOutput;
 	}
 
 	//Output of solution

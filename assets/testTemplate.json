@@ -1,0 +1,16 @@
+{
+    "inputs": [
+        {
+            "name": "Test with example input",
+            "puzzle1": 0,
+            "puzzle2": 0,
+            "data": "0\n1\n2\n3"
+        },
+        {
+            "name": "Test with my input",
+            "puzzle1": 0,
+            "puzzle2": 0,
+            "data": ""
+        }
+    ]
+}

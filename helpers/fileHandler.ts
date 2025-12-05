@@ -2,13 +2,16 @@
 import fs from 'fs';
 import * as helpers from '../helpers';
 
-function getFileWithSplit(filename: String, split: String): Array<String> {
+function getFileInput(filename: String): string {
 	const year = helpers.getEnv.getYear();
 	//Read file
 	const data = fs.readFileSync(`./${year}/inputs/${filename}`, 'utf8');
-	const stream = data.split(`${split}`);
-
-	return stream;
+	return data;
 }
 
-export { getFileWithSplit };
+function getFileWithSplit(filename: String, split: String): Array<string> {
+	const data = getFileInput(filename);
+	return data.split(`${split}`);
+}
+
+export { getFileInput, getFileWithSplit };

@@ -1,20 +1,16 @@
 // Link to AoC: https://adventofcode.com/2025/day/1
 
-// Modules
-import * as helpers from '../helpers';
-
-// Parse input for puzzle
-const input = helpers.fileHandler.getFileWithSplit('Day1.txt', '\n');
-const sequences = input.map((line) => {
-	return {
-		rotation: line.slice(0, 1),
-		distance: Number(line.slice(1)),
-	};
-});
-
-function puzzle1(): Number {
+function puzzle1(data: String): Number {
 	//Default variables
 	let output = 0;
+
+	//Input
+	const sequences = data.split('\n').map((line) => {
+		return {
+			rotation: line.slice(0, 1),
+			distance: Number(line.slice(1)),
+		};
+	});
 
 	//Puzzle solving
 	let dial = 50;
@@ -30,9 +26,17 @@ function puzzle1(): Number {
 	return output;
 }
 
-function puzzle2(): Number {
+function puzzle2(data: String): Number {
 	//Default variables
 	let output = 0;
+
+	//Input
+	const sequences = data.split('\n').map((line) => {
+		return {
+			rotation: line.slice(0, 1),
+			distance: Number(line.slice(1)),
+		};
+	});
 
 	//Puzzle solving
 	let current = 50;
