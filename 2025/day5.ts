@@ -1,18 +1,15 @@
 // Link to AoC: https://adventofcode.com/2025/day/5
 
-// Modules
-import * as helpers from '../helpers';
-
-const input = helpers.fileHandler.getFileWithSplit('Day5.txt', '\n\n');
-const ranges = input[0]
-	.split('\n')
-	.map((range) => range.split('-').map(Number))
-	.sort((a, b) => a[0] - b[0]);
-const ingredients = input[1].split('\n').map((ingredient) => Number(ingredient));
-
-function puzzle1(): Number {
+function puzzle1(data: String): Number {
 	//Default variables
 	let output = 0;
+
+	//Input
+	const input = data.split('\n\n');
+	const ranges = input[0]
+		.split('\n')
+		.map((range) => range.split('-').map(Number));
+	const ingredients = input[1].split('\n').map((ingredient) => Number(ingredient));
 
 	//Puzzle solving
 	for (let i = 0; i < ingredients.length; i++) {
@@ -30,9 +27,16 @@ function puzzle1(): Number {
 	return output;
 }
 
-function puzzle2(): Number {
+function puzzle2(data: String): Number {
 	//Default variables
 	let output = 0;
+
+	//Input
+	const input = data.split('\n\n');
+	const ranges = input[0]
+		.split('\n')
+		.map((range) => range.split('-').map(Number))
+		.sort((a, b) => a[0] - b[0]);
 
 	//Puzzle solving
 	const freshRanges: number[][] = [];

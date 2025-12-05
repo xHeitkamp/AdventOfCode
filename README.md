@@ -14,11 +14,11 @@ In the [package.json](package.json) you can specify the year that you want to ru
 
 ```json
 {
-	...
-	"config": {
-		"year": 2024
-	},
-	...
+  ...
+  "config": {
+    "year": 2024
+    },
+  ...
 }
 ```
 
@@ -27,17 +27,6 @@ To get my solutions, just run following commands:
 ```bash
 npm install
 npm run start
-```
-
-If you want to run a specific day or a specific puzzle. In this example I want to see the solutions of day 2:
-
-```bash
-npm run day <day> <puzzle> <performance>
-
-#Examples
-npm run day 2           #Runs Day2 with both puzzles
-npm run day 2 1         #Runs Day2 Puzzle1
-npm run day 2 1 true    #Runs Day2 Puzzle1 and logs the time in ms
 ```
 
 To initialize a new day, you can do that if just one line.
@@ -51,13 +40,35 @@ npm run init       #Only in december 1-25
 npm run init 14    #Creates the day 14 for you
 ```
 
+If you want to run a specific day or a specific puzzle. In this example I want to see the solutions of day 2:
+
+```bash
+npm run day <day> <?puzzle> <?performance>
+
+#Examples
+npm run day 2           #Runs Day2 with both puzzles
+npm run day 2 1         #Runs Day2 Puzzle1
+npm run day 2 1 true    #Runs Day2 Puzzle1 and logs the time in ms
+```
+
+To test a specific day or specific puzzle, just use the test module
+When you are in the advent you do not need to specify anything. But if you aren't you need to input your wished day.
+
+```bash
+npm run test <day> <?puzzle>
+
+#Examples
+npm run test 5      #Runs Day5 with both puzzles
+npm run test 5 1    #Runs Day5 only puzzle 1
+```
+
 ## Years of Advent of Code
 
 Each year of me participating in AoC you can find here
 
--   [AoC 2025](2025/README.md)
--   [AoC 2024](2024/README.md)
--   [AoC 2023](2023/README.md)
+- [AoC 2025](2025/README.md)
+- [AoC 2024](2024/README.md)
+- [AoC 2023](2023/README.md)
 
 ## License
 

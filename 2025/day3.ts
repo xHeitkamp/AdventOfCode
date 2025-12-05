@@ -1,14 +1,11 @@
 // Link to AoC: https://adventofcode.com/2025/day/3
 
-// Modules
-import * as helpers from '../helpers';
-
-const input = helpers.fileHandler.getFileWithSplit('Day3.txt', '\n');
-const banks = input.map((bank) => bank.split('').map(Number));
-
-function puzzle1(): Number {
+function puzzle1(data: String): Number {
 	//Default variables
 	let output = 0;
+
+	//Input
+	const banks = data.split('\n').map((bank) => bank.split('').map(Number));
 
 	//Puzzle solving
 	const joltages: number[] = [];
@@ -24,9 +21,12 @@ function puzzle1(): Number {
 	return output;
 }
 
-function puzzle2(): Number {
+function puzzle2(data: String): Number {
 	//Default variables
 	let output = 0;
+
+	//Input
+	const banks = data.split('\n').map((bank) => bank.split('').map(Number));
 
 	//Puzzle solving
 	const joltages: number[] = [];

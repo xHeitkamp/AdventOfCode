@@ -1,30 +1,31 @@
 // Link to AoC: https://adventofcode.com/&YEAR&/day/&DAY&
 
-// Modules
-import * as helpers from '../helpers';
+function puzzle1(data: String): Number {
+	//Default variables
+	let output = 0;
 
-const input = helpers.fileHandler.getFileWithSplit('Day&DAY&.txt', '\n');
+	//Input
+	const input = data.split('\n');
 
-function puzzle1(): Number {
-    //Default variables
-    let output = 0;
+	//Puzzle solving
+	output = input.length;
 
-    //Puzzle solving
-    output = input.length;
-
-    //Output of solution
-    return output;
+	//Output of solution
+	return output;
 }
 
-function puzzle2(): Number {
-    //Default variables
-    let output = 0;
+function puzzle2(data: String): Number {
+	//Default variables
+	let output = 0;
 
-    //Puzzle solving
-    output = input.length;
+	//Input
+	const input = data.split('\n');
 
-    //Output of solution
-    return output;
+	//Puzzle solving
+	output = input.length;
+
+	//Output of solution
+	return output;
 }
 
 export { puzzle1, puzzle2 };

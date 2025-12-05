@@ -1,19 +1,17 @@
 // Link to AoC: https://adventofcode.com/2025/day/2
 
-// Modules
-import * as helpers from '../helpers';
-
-const input = helpers.fileHandler.getFileWithSplit('Day2.txt', '\n');
-const ranges = input
-	.flatMap((line) => line.split(','))
-	.map((range) => {
-		const [start, end] = range.split('-').map(Number);
-		return { start, end };
-	});
-
-function puzzle1(): Number {
+function puzzle1(data: String): Number {
 	//Default variables
 	let output = 0;
+
+	//Input
+	const ranges = data
+		.split('\n')
+		.flatMap((line) => line.split(','))
+		.map((range) => {
+			const [start, end] = range.split('-').map(Number);
+			return { start, end };
+		});
 
 	//Puzzle solving
 	const invalidNumbers: number[] = [];
@@ -38,9 +36,18 @@ function puzzle1(): Number {
 	return output;
 }
 
-function puzzle2(): Number {
+function puzzle2(data: String): Number {
 	//Default variables
 	let output = 0;
+
+	//Input
+	const ranges = data
+		.split('\n')
+		.flatMap((line) => line.split(','))
+		.map((range) => {
+			const [start, end] = range.split('-').map(Number);
+			return { start, end };
+		});
 
 	//Puzzle solving
 	const regex = /^(\d+)\1+$/g;
