@@ -9,7 +9,7 @@
 |        [3 - Lobby](day3.ts)        |  ⭐️ (~0.84ms)  |  ⭐️ (~1.12ms)  |
 | [4 - Printing Department](day4.ts) |  ⭐️ (~3.34ms)  | ⭐️ (~30.80ms)  |
 |      [5 - Cafeteria](day5.ts)      |  ⭐️ (~1.09ms)  |  ⭐️ (~0.11ms)  |
-|         [6 - ???](day6.ts)         |                 |                 |
+|   [6 - Trash Compacto](day6.ts)    | ⭐️ (~12.07ms)  | ⭐️ (~13.08ms)  |
 |         [7 - ???](day7.ts)         |                 |                 |
 |         [8 - ???](day8.ts)         |                 |                 |
 |         [9 - ???](day9.ts)         |                 |                 |
